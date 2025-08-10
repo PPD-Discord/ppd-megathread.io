@@ -1,9 +1,67 @@
+
+
+/*Add Global Variables here to make code easier to read*/
+:root {
+    /*Colors*/
+    --mikuBlue: rgb(15, 211, 211);
+    --clearWhite: rgba(229, 243, 243, 0.925);
+    /*Fonts*/
+    --ppdMegaFont: 'DFPOPMix-W5-WIN-RKSJ-H-01.ttf';
+    /*Custom Blocks*/
+    --custom-block-font-size: 16px;
+    --custom-block-info-color: rgba(54, 54, 54, 0.685);
+    --custom-block-continue-color: rgba(110, 111, 218, 0.685);
+    --custom-block-warning-color: rgba(167, 164, 12, 0.685);
+    --custom-block-danger-color: rgba(255, 0, 0, 0.685);
+    
+}
+
+/*Classes*/
+
+.custom-blocks{
+    margin-top: 16px;
+    margin-left: 450px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    line-height: 24px;
+    font-size: var(--custom-block-font-size);
+    text-shadow: 0px 0px 0px transparent;
+    width: 50%;
+
+}
+
+.custom-blocks.info{
+    border: 2px solid transparent;
+    color: white;
+    background-color: var(--custom-block-info-color)
+}
+
+.custom-blocks.continue{
+    border: 2px solid transparent;
+    color: white;
+    background-color: var(--custom-block-continue-color)
+}
+
+.custom-blocks.warning{
+    border: 2px solid transparent;
+    color: white;
+    background-color: var(--custom-block-warning-color)
+}
+
+.custom-blocks.danger{
+    border: 2px solid transparent;
+    color: white;
+    background-color: var(--custom-block-danger-color)
+}
+
+/*Page elements*/
+
 a{
     color:rgb(255, 255, 255);
 }
 
 a:visited {
-  color: rgb(255, 126, 216);
+    color: rgb(255, 126, 216);
 }
 
 #topPortion{
@@ -26,10 +84,10 @@ a:visited {
 }
 
 #horizontalCenterBar{
-    background-image: linear-gradient(rgb(15, 211, 211), rgba(229, 243, 243, 0.925), rgb(15, 211, 211));
+    background-image: linear-gradient(var(--mikuBlue),var(--clearWhite) , var(--mikuBlue));
     box-shadow: 0px 4px 8px 3px rgb(9, 126, 126);
     outline-style: ridge;
-    outline-color:rgb(8, 8, 8)
+    outline-color:rgb(8, 8, 8);
     width: 100%;
     height: 50px;
     display: flex;
@@ -38,10 +96,11 @@ a:visited {
 }
 
 body{
+    max-width: 1980px;
     background-color: #262222;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px #26d3d3;
-    font-family: 'DFPOPMix-W5-WIN-RKSJ-H-01.ttf';
+    font-family: var(--ppdMegaFont);
 }
 
 #Title{
@@ -53,3 +112,4 @@ body{
     text-align: center;
     color: white;
 }
+
