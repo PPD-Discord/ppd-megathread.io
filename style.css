@@ -72,12 +72,14 @@ a:visited {
 #ppdBanner{
     width: 500px;
     height: auto;
+    position: relative;
+    left: 400px;
 }
 
 #ppdLogo{
     position: absolute;
     bottom: 8px;
-    left: 16px;
+    left: 300px;
     font-size: 80px; /*May be removed*/
     color: white; /*May be removed*/
 }
@@ -87,11 +89,12 @@ a:visited {
     box-shadow: 0px 4px 8px 3px rgb(9, 126, 126);
     outline-style: ridge;
     outline-color:rgb(8, 8, 8);
-    width: 100%;
+    width: 70%;
     height: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    place-self: center;
 }
 
 body{
@@ -102,13 +105,57 @@ body{
     font-family: var(--ppdMegaFont);
 }
 
+#tableOfContents{
+  width: 20%;
+  outline-style: ridge;
+  outline-color: black;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1%;
+  float: left;
+}
+
+#mainInformation{
+  outline-style: ridge;
+  outline-color: black;
+  width: 77%;
+  float: left;
+  margin-top: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+
 #Title{
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
 #belowHorizontalCenterBar{
-    text-align: center;
+    text-align: left;
     color: white;
+    background-color: pink; 
+    width: 70%;
+    place-self: center;
+    outline-style: ridge;
+    outline-color:rgb(8, 8, 8);
+
+    overflow: hidden;
+    /*display: flex;
+    align-items: left;*/
+
 }
 
+footer{
+    background-color: rgb(21, 27, 44);
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    place-self: center;
+    outline-style: ridge;
+    outline-color:rgb(8, 8, 8);
+    box-shadow: 0px 4px 8px 3px rgb(9, 126, 126);
+}
+
+h1{
+    background-image: url('E:\PPD website\ppd-megathread.io\images\HeaderBar.png');
+}
