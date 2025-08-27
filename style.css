@@ -53,6 +53,10 @@
     background-color: var(--custom-block-danger-color)
 }
 
+.custom-songSection{
+    margin-left: 11%;
+}
+
 /*Page elements*/
 
 a{
@@ -98,8 +102,9 @@ a:visited {
 }
 
 body{
-    max-width: 1980px;
+    max-width: 100%;
     background-color: #262222;
+    background-image: url('');
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px #26d3d3;
     font-family: var(--ppdMegaFont);
@@ -157,5 +162,5 @@ footer{
 }
 
 h1{
-    background-image: url('E:\PPD website\ppd-megathread.io\images\HeaderBar.png');
+    background-image: "../images/HeaderBar.png";
 }
