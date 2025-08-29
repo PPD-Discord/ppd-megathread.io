@@ -1,9 +1,81 @@
+
+
+/*Add Global Variables here to make code easier to read*/
+:root {
+    /*Colors*/
+    --mikuBlue: rgb(15, 211, 211);
+    --clearWhite: rgba(229, 243, 243, 0.925);
+    /*Fonts*/
+    --ppdMegaFont: 'DFPOPMix-W5-WIN-RKSJ-H-01.ttf';
+    /*Custom Blocks*/
+    --custom-block-font-size: 16px;
+    --custom-block-info-color: rgba(54, 54, 54, 0.685);
+    --custom-block-continue-color: rgba(110, 111, 218, 0.685);
+    --custom-block-warning-color: rgba(167, 164, 12, 0.685);
+    --custom-block-danger-color: rgba(255, 0, 0, 0.685);
+    
+}
+
+/*Classes*/
+
+.headerBar{
+    background-image: url('images/HeaderBar.png');
+    background-repeat: no-repeat;
+    background-size: 95%;
+    height: 55px;
+    padding-left: 20px;
+    padding-top: 6px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.custom-blocks{
+    margin-top: 16px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    line-height: 24px;
+    font-size: var(--custom-block-font-size);
+    text-shadow: 0px 0px 0px transparent;
+    width: 75%;
+
+}
+
+.custom-blocks.info{
+    border: 2px solid transparent;
+    color: white;
+    background-color: var(--custom-block-info-color)
+}
+
+.custom-blocks.continue{
+    border: 2px solid transparent;
+    color: white;
+    background-color: var(--custom-block-continue-color)
+}
+
+.custom-blocks.warning{
+    border: 2px solid transparent;
+    color: white;
+    background-color: var(--custom-block-warning-color)
+}
+
+.custom-blocks.danger{
+    border: 2px solid transparent;
+    color: white;
+    background-color: var(--custom-block-danger-color)
+}
+
+.custom-songSection{
+    margin-left: 11%;
+}
+
+/*Page elements*/
+
 a{
     color:rgb(255, 255, 255);
 }
 
 a:visited {
-  color: rgb(255, 126, 216);
+    color: rgb(255, 126, 216);
 }
 
 #topPortion{
@@ -15,41 +87,93 @@ a:visited {
 #ppdBanner{
     width: 500px;
     height: auto;
+    position: relative;
+    left: 400px;
 }
 
 #ppdLogo{
     position: absolute;
     bottom: 8px;
-    left: 16px;
+    left: 300px;
     font-size: 80px; /*May be removed*/
     color: white; /*May be removed*/
 }
 
 #horizontalCenterBar{
-    background-image: linear-gradient(rgb(15, 211, 211), rgba(229, 243, 243, 0.925), rgb(15, 211, 211));
+    background-image: linear-gradient(var(--mikuBlue),var(--clearWhite) , var(--mikuBlue));
     box-shadow: 0px 4px 8px 3px rgb(9, 126, 126);
     outline-style: ridge;
-    outline-color:rgb(8, 8, 8)
-    width: 100%;
+    outline-color:rgb(8, 8, 8);
+    width: 70%;
     height: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    place-self: center;
 }
 
 body{
+    max-width: 100%;
     background-color: #262222;
+    background-image: url("images/website-background-no-elements.jpg");
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px #26d3d3;
-    font-family: 'DFPOPMix-W5-WIN-RKSJ-H-01.ttf';
+    font-family: var(--ppdMegaFont);
+}
+
+#tableOfContents{
+  width: 20%;
+  outline-style: ridge;
+  outline-color: black;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1%;
+  float: left;
+}
+
+#mainInformation{
+  outline-style: ridge;
+  outline-color: black;
+  width: 77%;
+  float: left;
+  margin-top: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
 }
 
 #Title{
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
 #belowHorizontalCenterBar{
-    text-align: center;
+    text-align: left;
     color: white;
+    background-color: pink; 
+    width: 70%;
+    place-self: center;
+    outline-style: ridge;
+    outline-color:rgb(8, 8, 8);
+
+    overflow: hidden;
+    /*display: flex;
+    align-items: left;*/
+
+}
+
+footer{
+    background-color: rgb(21, 27, 44);
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    place-self: center;
+    outline-style: ridge;
+    outline-color:rgb(8, 8, 8);
+    box-shadow: 0px 4px 8px 3px rgb(9, 126, 126);
+}
+
+p {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
 }
