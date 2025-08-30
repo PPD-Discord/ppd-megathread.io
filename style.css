@@ -11,7 +11,7 @@
     --custom-block-font-size: 16px;
     --custom-block-info-color: rgba(54, 54, 54, 0.685);
     --custom-block-continue-color: rgba(110, 111, 218, 0.685);
-    --custom-block-warning-color: rgba(167, 164, 12, 0.685);
+    --custom-block-warning-color: rgba(255, 233, 39, 0.685);
     --custom-block-danger-color: rgba(255, 0, 0, 0.685);
     
 }
@@ -21,12 +21,23 @@
 .headerBar{
     background-image: url('images/HeaderBar.png');
     background-repeat: no-repeat;
-    background-size: 95%;
-    height: 55px;
-    padding-left: 20px;
-    padding-top: 6px;
-    margin-left: 10px;
-    margin-top: 10px;
+    background-size: 100%;
+    height: 120%;
+    padding-left: 2%;
+    margin-left: 1%;
+    margin-top: 1%;
+    font-size: 285%;
+}
+
+.horizontalCenterBarButtons{
+    width: 100%; 
+    margin-bottom: 43%; 
+    z-index: 999; 
+    position: relative;
+}
+
+.tableOfContentsBlocks{
+    width:100%;
 }
 
 .custom-blocks{
@@ -36,7 +47,7 @@
     line-height: 24px;
     font-size: var(--custom-block-font-size);
     text-shadow: 0px 0px 0px transparent;
-    width: 75%;
+    width: 70%;
 
 }
 
@@ -55,6 +66,7 @@
 .custom-blocks.warning{
     border: 2px solid transparent;
     color: white;
+    font-weight:bold;
     background-color: var(--custom-block-warning-color)
 }
 
@@ -75,47 +87,52 @@ a{
 }
 
 a:visited {
-    color: rgb(255, 126, 216);
+    color: rgb(33, 252, 186);
 }
 
 #topPortion{
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    z-index: 1;
 }
 
 #ppdBanner{
-    width: 500px;
+    width: 30%;
     height: auto;
     position: relative;
-    left: 400px;
+    left: 21%;
 }
 
 #ppdLogo{
     position: absolute;
-    bottom: 8px;
-    left: 300px;
-    font-size: 80px; /*May be removed*/
-    color: white; /*May be removed*/
+    bottom: 1%;
+    left: 15%;
+    width: 15%;
+
 }
 
 #horizontalCenterBar{
     background-image: linear-gradient(var(--mikuBlue),var(--clearWhite) , var(--mikuBlue));
     box-shadow: 0px 4px 8px 3px rgb(9, 126, 126);
     outline-style: ridge;
-    outline-color:rgb(8, 8, 8);
+    outline-color:rgb(145, 145, 145);
+    outline-width: thick;
     width: 70%;
     height: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     place-self: center;
+    z-index: 2;
+    position: relative;
 }
+
 
 body{
     max-width: 100%;
     background-color: #262222;
-    background-image: url("images/website-background-no-elements.jpg");
+    background-image: url("images/repeating-background.png");
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px #26d3d3;
     font-family: var(--ppdMegaFont);
@@ -124,21 +141,26 @@ body{
 #tableOfContents{
   width: 20%;
   outline-style: ridge;
-  outline-color: black;
+  outline-color: rgb(255, 255, 255);
   margin-left: 1%;
   margin-right: 1%;
   margin-top: 1%;
   float: left;
+  background-image: url('images/footer-background.jpg');
+  background-size: cover;
+  box-shadow: 5px 5px 5px rgb(1, 141, 146);
 }
 
 #mainInformation{
   outline-style: ridge;
-  outline-color: black;
+  outline-color: linear-gradient(90deg,rgb(255, 255, 255) 0%, rgb(23, 193, 245) 50%, rgb(255, 255, 255) 100%);
   width: 77%;
   float: left;
   margin-top: 1%;
   margin-right: 1%;
   margin-bottom: 1%;
+  background: linear-gradient(90deg,rgba(0, 41, 74, 1) 0%, rgba(47, 101, 117, 1) 50%, rgba(7, 32, 56, 1) 100%);
+  box-shadow: 5px 5px 5px rgb(1, 141, 146);
 }
 
 #Title{
@@ -149,11 +171,12 @@ body{
 #belowHorizontalCenterBar{
     text-align: left;
     color: white;
-    background-color: pink; 
+    background: url('images/body-background.jpg');
     width: 70%;
     place-self: center;
     outline-style: ridge;
-    outline-color:rgb(8, 8, 8);
+    outline-color:rgb(145, 145, 145);
+    outline-width: thick;
 
     overflow: hidden;
     /*display: flex;
@@ -170,10 +193,12 @@ footer{
     outline-style: ridge;
     outline-color:rgb(8, 8, 8);
     box-shadow: 0px 4px 8px 3px rgb(9, 126, 126);
+    background-image: url('images/footer-background.jpg');
+    background-size: cover;
 }
 
 p {
-    font-size: 20px;
-    margin-left: 20px;
-    margin-right: 10px;
+    font-size: 129%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
